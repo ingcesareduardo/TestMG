@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BusinessLayer.Entities.EmployeeDTO>
+
+@{
+    ViewData["Title"] = "Employee";
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Contrat Type
+            </th>
+            <th>
+                Role Id
+            </th>
+            <th>
+               Role Name
+            </th>
+            <th>
+                Role Description
+            </th>
+            <th>
+                Annual Salary
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractTypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AnnualSalary)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

@@ -32,7 +32,7 @@ namespace TestMG.Web
             services.AddSingleton<IServiceLocator, ServiceLocator>();
             services.AddSingleton<IWebApiCalls, _webApiCalls>();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

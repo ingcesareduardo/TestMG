@@ -7,12 +7,12 @@
 <h1>Employees</h1>
 <form>
 	<div class="row">
-		<div class="col-2">
+		<div class="col-2 mb-2">
 			<input asp-for="Id" class="form-control" />
 		</div>
 	</div>
 	
-	<button id="btnGetEmployees" type="button" asp-action="Index" asp-controller="Employee" class="btn btn-primary">Get Employees <span class="glyphicon glyphicon-check" style="font-size:15px"></span></button>
+	<button id="btnGetEmployees" type="button" asp-action="Index" asp-controller="Employee" class="btn btn-primary mb-2">Get Employees</button>
 </form>
 
 <div id="employeesContainer"></div>
